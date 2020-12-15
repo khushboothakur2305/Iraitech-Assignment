@@ -1,6 +1,8 @@
 <div>
-  <button (click)="addComponents()">Add X Component</button>
+  <button mat-raised-button color="primary" (click)="addComponents()">
+    Add X Component
+  </button>
 </div>
-<div *ngFor="let com of userComponets; let i = index">
+<div *ngFor="let com of userComponets; let i = index" style="margin-left: 10%">
   <app-xcomponent [componentCount]="i"></app-xcomponent>
 </div>
