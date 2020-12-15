@@ -1,1 +1,5 @@
-<p>xcomponent works!</p>
+<div>First Componet</div>
+<button (click)="addYComponents()">Add Y Components</button>
+<div *ngFor="let comp of ycomponents; let i = index">
+  <app-ycomponent [mainComponet]="componentCount"></app-ycomponent>
+</div>

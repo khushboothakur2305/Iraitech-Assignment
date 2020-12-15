@@ -1,1 +1,6 @@
-<p>second-question works!</p>
+<div>
+  <button (click)="addComponents()">Add X Component</button>
+</div>
+<div *ngFor="let com of userComponets; let i = index">
+  <app-xcomponent [componentCount]="i"></app-xcomponent>
+</div>

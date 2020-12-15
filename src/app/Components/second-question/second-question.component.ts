@@ -3,13 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-second-question',
   templateUrl: './second-question.component.html',
-  styleUrls: ['./second-question.component.scss']
+  styleUrls: ['./second-question.component.scss'],
 })
 export class SecondQuestionComponent implements OnInit {
+  userComponets = [];
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  addComponents() {
+    this.userComponets.push('HEllo');
   }
-
 }
