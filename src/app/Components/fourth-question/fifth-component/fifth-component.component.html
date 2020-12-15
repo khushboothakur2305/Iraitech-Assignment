@@ -1,0 +1,19 @@
+<div class="OuterDiv">
+  <form>
+    <div class="forms">
+      <section>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Value</mat-label>
+          <input
+            (keyup)="onChnage($event)"
+            matInput
+            name="seriesNumber"
+            type="text"
+            ngModel
+            required
+          />
+        </mat-form-field>
+      </section>
+    </div>
+  </form>
+</div>

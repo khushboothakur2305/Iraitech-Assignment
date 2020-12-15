@@ -1,0 +1,40 @@
+<div class="OuterDiv">
+  <h1>Add Phone Numbers</h1>
+  <div class="forms">
+    <div *ngFor="let mobile of MobileNumber; let i = index">
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Number</mat-label>
+          <input
+            (change)="onChange($event, i)"
+            matInput
+            name="seriesNumber"
+            placeholder="Enter Index to get value of Series"
+            type="number"
+            ngModel
+            required
+          />
+        </mat-form-field>
+        <button
+          *ngIf="MobileNumber.length > 1"
+          (click)="deleteFiled(i)"
+          mat-raised-button
+          color="warn"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+    <div>
+      <button mat-raised-button color="accent" (click)="AddNumberField()">
+        Add
+      </button>
+      <button mat-raised-button color="primary" (click)="showDetails()">
+        Submit
+      </button>
+    </div>
+    <div *ngIf="show === true" style="margin-top: 20px">
+      <h2>Check Console log</h2>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="OuterDiv">
+  <form #form="ngForm" (ngSubmit)="OnSubmit(form)">
+    <div class="forms">
+      <section>
+        <h1>Get Number From Series</h1>
+        <br />
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Number</mat-label>
+          <input
+            matInput
+            name="seriesNumber"
+            placeholder="Enter Index to get value of Series"
+            type="number"
+            ngModel
+            required
+          />
+        </mat-form-field>
+      </section>
+      <section>
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="form.invalid"
+        >
+          Submit
+        </button>
+      </section>
+      <div
+        *ngIf="NumberEntered"
+        style="color: rgb(183, 20, 89); margin-top: 20%"
+      >
+        <h2 *ngIf="Index > 0">
+          The Number at index {{ Index }} in Series is :
+          <span style="font-size: 30px; color: white"
+            ><b>{{ Result }}</b></span
+          >
+        </h2>
+        <h2 *ngIf="Index == 0 || Index < 0">Invalid Number</h2>
+      </div>
+    </div>
+  </form>
+</div>

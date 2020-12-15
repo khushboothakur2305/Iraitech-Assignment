@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="bottom-left">
+    <app-first-component [sendData]="Value"></app-first-component>
+  </div>
+  <div class="top-left">
+    <app-second-component [sendData]="Value"></app-second-component>
+  </div>
+  <div class="top-right">
+    <app-third-component [sendData]="Value"></app-third-component>
+  </div>
+  <div class="bottom-right">
+    <app-fourth-component [sendData]="Value"></app-fourth-component>
+  </div>
+  <div class="centered">
+    <app-fifth-component (iteamName)="addItem($event)"></app-fifth-component>
+  </div>
+</div>

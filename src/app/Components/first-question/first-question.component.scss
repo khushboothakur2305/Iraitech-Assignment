@@ -1,0 +1,27 @@
+.OuterDiv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.forms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid white;
+  padding: 20%;
+  border-radius: 20px;
+}
+mat-form-field {
+  width: 300px;
+}
+button {
+  width: 300px;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
