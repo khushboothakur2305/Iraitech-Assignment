@@ -1,61 +1,7 @@
-.container {
-  height: 600px;
-  width: 1400px;
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.bottom-left {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+section {
   border: 1px solid white;
   background: rgb(183, 20, 89);
   color: white;
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.top-left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 1px solid white;
-  background: rgb(183, 20, 89);
-  color: white;
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.top-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 1px solid white;
-  background: rgb(183, 20, 89);
-  color: white;
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border: 1px solid white;
-  background: rgb(183, 20, 89);
-  color: white;
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid white;
   border-radius: 20px;
   padding: 20px;
 }

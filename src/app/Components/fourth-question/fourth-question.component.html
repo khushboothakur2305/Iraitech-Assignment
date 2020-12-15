@@ -1,17 +1,57 @@
-<div class="container">
-  <div class="bottom-left">
-    <app-first-component [sendData]="Value"></app-first-component>
+<div
+  style="
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+  "
+>
+  <div
+    style="
+      width: 100%;
+      height: 150px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    "
+  >
+    <section>
+      <app-first-component [sendData]="Value"></app-first-component>
+    </section>
+    <section>
+      <app-second-component [sendData]="Value"></app-second-component>
+    </section>
   </div>
-  <div class="top-left">
-    <app-second-component [sendData]="Value"></app-second-component>
+  <div
+    style="
+      height: 150px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    "
+  >
+    <div>
+      <app-fifth-component (iteamName)="addItem($event)"></app-fifth-component>
+    </div>
   </div>
-  <div class="top-right">
-    <app-third-component [sendData]="Value"></app-third-component>
-  </div>
-  <div class="bottom-right">
-    <app-fourth-component [sendData]="Value"></app-fourth-component>
-  </div>
-  <div class="centered">
-    <app-fifth-component (iteamName)="addItem($event)"></app-fifth-component>
+  <div
+    style="
+      width: 100%;
+      height: 150px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    "
+  >
+    <section>
+      <app-third-component [sendData]="Value"></app-third-component>
+    </section>
+    <section>
+      <app-fourth-component [sendData]="Value"></app-fourth-component>
+    </section>
   </div>
 </div>
