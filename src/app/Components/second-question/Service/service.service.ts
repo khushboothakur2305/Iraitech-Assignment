@@ -10,8 +10,6 @@ export class ServiceService {
   getValue(Index) {
     if (this.MainObject.length > 0) {
       this.MainObject.map((res) => {
-        console.log(res);
-
         if (res.key != `X{Index}`) {
           this.MainObject.push({
             key: `X${Index}`,
@@ -28,8 +26,6 @@ export class ServiceService {
     }
   }
   getyValue(index, data) {
-    console.log(index, data);
     this.MainObject[index].value.push(data);
-    console.log(this.MainObject);
   }
 }

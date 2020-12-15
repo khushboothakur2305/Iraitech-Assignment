@@ -14,7 +14,6 @@ export class SecondQuestionComponent implements OnInit {
   ngOnInit(): void {}
   addComponents() {
     this.count = this.count + 1;
-    console.log(this.count);
     this.service.getValue(this.count);
     this.userComponets.push('HEllo');
   }

@@ -21,6 +21,5 @@ export class FirstQuestionComponent implements OnInit {
     } else {
       this.Result = this.Index * this.Index + 1;
     }
-    console.log(form.value.seriesNumber);
   }
 }

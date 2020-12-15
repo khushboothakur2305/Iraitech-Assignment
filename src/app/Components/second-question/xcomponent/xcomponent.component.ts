@@ -10,7 +10,6 @@ export class XComponentComponent implements OnInit {
   ycomponents = [];
   ngOnInit(): void {}
   addYComponents() {
-    console.log(this.componentCount);
     this.ycomponents.push('Hello');
   }
 }

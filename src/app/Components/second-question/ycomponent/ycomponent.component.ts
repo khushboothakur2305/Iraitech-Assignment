@@ -14,8 +14,6 @@ export class YComponentComponent implements OnInit {
   userData = [];
   ngOnInit(): void {}
   onAdd(data) {
-    console.log(data);
-    console.log(this.mainComponet);
     this.service.getyValue(this.mainComponet, data);
   }
 }

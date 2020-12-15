@@ -10,7 +10,6 @@ export class FifthComponentComponent implements OnInit {
   onChnage(event) {
     // this.service.setVaribale(this.TextTransfered);
     this.iteamName.emit(event.target.value);
-    console.log('Hello');
   }
   constructor() {}
 
