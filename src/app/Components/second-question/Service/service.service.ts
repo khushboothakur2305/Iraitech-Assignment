@@ -8,17 +8,7 @@ export class ServiceService {
 
   constructor() {}
   getValue(Index) {
-    if (this.MainObject.length > 0) {
-      this.MainObject.map((res) => {
-        if (res.key != `X{Index}`) {
-          this.MainObject.push({
-            key: `X${Index}`,
-            value: [],
-          });
-        }
-      });
-    }
-    if (this.MainObject.length == 0) {
+    if (this.MainObject.length <= Index) {
       this.MainObject.push({
         key: `X${Index}`,
         value: [],
@@ -27,5 +17,9 @@ export class ServiceService {
   }
   getyValue(index, data) {
     this.MainObject[index].value.push(data);
+  }
+
+  sendJsonObject() {
+    return this.MainObject;
   }
 }

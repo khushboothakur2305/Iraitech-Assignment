@@ -6,3 +6,13 @@
 <div *ngFor="let com of userComponets; let i = index" style="margin-left: 10%">
   <app-xcomponent [componentCount]="i"></app-xcomponent>
 </div>
+<div style="margin-top: 10%">
+  <button (click)="getJson()" mat-raised-button color="primary">
+    Show Json
+  </button>
+</div>
+<div *ngIf="showJson">
+  <section style="background-color: rgb(183, 20, 89); color: white">
+    <h3>{{ JsonObject | json }}</h3>
+  </section>
+</div>

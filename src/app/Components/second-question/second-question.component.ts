@@ -9,6 +9,8 @@ import { ServiceService } from './Service/service.service';
 export class SecondQuestionComponent implements OnInit {
   userComponets = [];
   count = -1;
+  JsonObject;
+  showJson = false;
   constructor(private service: ServiceService) {}
 
   ngOnInit(): void {}
@@ -16,5 +18,9 @@ export class SecondQuestionComponent implements OnInit {
     this.count = this.count + 1;
     this.service.getValue(this.count);
     this.userComponets.push('HEllo');
+  }
+  getJson() {
+    this.showJson = !this.showJson;
+    this.JsonObject = this.service.sendJsonObject();
   }
 }
